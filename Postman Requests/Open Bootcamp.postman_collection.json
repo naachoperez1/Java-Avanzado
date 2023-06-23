@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "9989e286-e74c-4138-9704-b26ccad63c16",
+		"name": "Open Bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27458804"
+	},
+	"item": [
+		{
+			"name": "API usuarios",
+			"item": [
+				{
+					"name": "usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlUsuarios}}/bootcampers",
+							"host": [
+								"{{urlUsuarios}}"
+							],
+							"path": [
+								"bootcampers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Nacho\",\r\n    \"numero\" : \"6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlUsuarios}}/bootcampers",
+							"host": [
+								"{{urlUsuarios}}"
+							],
+							"path": [
+								"bootcampers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reqres",
+			"item": [
+				{
+					"name": "list users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlReqres}}/api/users?id=355",
+							"host": [
+								"{{urlReqres}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "355"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ignacio\",\r\n    \"job\": \"developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlReqres}}/api/users",
+							"host": [
+								"{{urlReqres}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "urlUsuarios",
+			"value": "http://localhost:9000",
+			"type": "string"
+		},
+		{
+			"key": "urlReqres",
+			"value": "https://reqres.in",
+			"type": "string"
+		}
+	]
+}
