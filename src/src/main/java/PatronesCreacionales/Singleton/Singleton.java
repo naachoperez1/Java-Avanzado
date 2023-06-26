@@ -1,7 +1,7 @@
 package PatronesCreacionales.Singleton;
 
 public class Singleton {
-    int contador;
+    public int contador;
     private static Singleton singleton;
 
 
