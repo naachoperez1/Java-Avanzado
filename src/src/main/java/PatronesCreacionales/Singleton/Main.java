@@ -1,6 +1,6 @@
 package PatronesCreacionales.Singleton;
 
-import PatronesCreacionales.SingletonClass.Singleton;
+//import PatronesCreacionales.SingletonClass.Singleton;
 
 public class Main {
     public static void main(String[] args) {
