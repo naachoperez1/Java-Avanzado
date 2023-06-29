@@ -1,0 +1,37 @@
+La Arquitectura Limpia (Clean Architecture) es un enfoque de diseño de software propuesto por Robert C. Martin
+(también conocido como Uncle Bob) que busca crear sistemas flexibles, mantenibles y testables. Algunas de las
+características principales de la Arquitectura Limpia son:
+
+ 1. Independencia de frameworks externos: La Arquitectura Limpia busca minimizar la dependencia de frameworks y
+    bibliotecas externas en el núcleo del sistema. Esto permite que el código de negocio no esté acoplado a
+    tecnologías específicas y sea más fácil de probar y mantener.
+
+ 2. Separación de responsabilidades: La arquitectura se organiza en capas, donde cada capa tiene una responsabilidad
+    claramente definida. Por lo general, se divide en capas como la Capa de Presentación, la Capa de Dominio y la Capa
+    de Infraestructura. Cada capa tiene un propósito específico y no debe violar la responsabilidad de las otras capas.
+
+ 3. Independencia de la interfaz de usuario: La Arquitectura Limpia no está acoplada a un tipo particular de interfaz
+    de usuario, como una interfaz de línea de comandos o una interfaz gráfica. Esto permite cambiar o agregar
+    interfaces de usuario sin afectar la lógica subyacente del sistema.
+
+ 4. Enfoque en reglas de negocio: La lógica de negocio se coloca en el núcleo de la aplicación, conocido como la Capa
+    de Dominio. Esta capa contiene las entidades, casos de uso y reglas de negocio del sistema. El objetivo es que esta
+    capa sea independiente de cualquier detalle de implementación o tecnología.
+
+ 5. Pruebas unitarias: La Arquitectura Limpia promueve el diseño de código que sea fácilmente testeable. Al tener una
+    separación clara de responsabilidades y una capa de dominio desacoplada, se pueden escribir pruebas unitarias para
+    validar la lógica de negocio sin la necesidad de depender de infraestructura externa.
+
+ 6. Inversión de dependencias: La Arquitectura Limpia sigue el principio de Inversión de Dependencias (Dependency
+    Inversion Principle) de SOLID. Esto implica que las dependencias se definen en términos de abstracciones en lugar
+    de implementaciones concretas. Esto permite una mayor flexibilidad y facilita la sustitución de componentes sin
+    afectar el resto del sistema.
+
+ 7. Mantenibilidad y escalabilidad: Al separar las responsabilidades y establecer una arquitectura modular, la
+    Arquitectura Limpia permite un sistema más mantenible y escalable. Los cambios en una capa no deberían afectar
+    otras capas, lo que facilita la evolución y adaptación del sistema a medida que cambian los requisitos.
+
+ Los casos mas recomendables para usar arquitectura limpia serian proyectos a largo plazo ya que el codigo puede ir
+ cambiando con el tiempo y proyectos colaborativos, asi todos los participantes trabajan de una manera mas organizada.
+
+
