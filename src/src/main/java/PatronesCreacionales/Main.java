@@ -5,6 +5,14 @@ import PatronesCreacionales.SingletonClass;
 public class Main {
     public static void main(String[] args) {
 
+
+//      SINGLETON: Es un patrón de diseño creacional que se utiliza para garantizar que una
+//      clase tenga una única instancia y proporcionar un punto de acceso global a dicha instancia.
+//      CASO DE USO: Gestor de conexiones de base de datos: En una aplicación que requiere acceder a
+//      una base de datos, se puede utilizar el patrón Singleton para crear un único objeto que
+//      administre la conexión con la base de datos. Esto garantiza que todos los componentes de la
+//      aplicación utilicen la misma conexión y evita la creación de múltiples conexiones innecesarias.
+
         SingletonClass singleton = SingletonClass.getInstance();
         singleton.contador = 10;
         System.out.println("valor: " + singleton.contador + ". Ubicacion: " + singleton );
@@ -15,44 +23,7 @@ public class Main {
     }
 
 
-//  Patrones creacionales:
 
-//      1. SINGLETON: Es un patrón de diseño creacional que se utiliza para garantizar que una
-//         clase tenga una única instancia y proporcionar un punto de acceso global a dicha instancia.
-//         CASO DE USO: Gestor de conexiones de base de datos: En una aplicación que requiere acceder a
-//         una base de datos, se puede utilizar el patrón Singleton para crear un único objeto que
-//         administre la conexión con la base de datos. Esto garantiza que todos los componentes de la
-//         aplicación utilicen la misma conexión y evita la creación de múltiples conexiones innecesarias.
-
-//      2. BUILDER: El patrón Builder (constructor o constructor fluido) es un patrón de diseño creacional
-//         que se utiliza para construir objetos complejos paso a paso. El patrón Builder permite crear
-//         diferentes variaciones de un objeto utilizando un mismo proceso de construcción, ocultando
-//         la complejidad del proceso de construcción detrás de una interfaz simple y fluida.
-//         CASO DE USO: Creación de objetos con muchos parámetros: Cuando una clase tiene muchos atributos
-//         y parámetros opcionales, el uso de constructores con muchos argumentos puede volverse incómodo
-//         y propenso a errores. En su lugar, se puede utilizar el patrón Builder para proporcionar una
-//         forma más legible y mantenible de construir objetos complejos, permitiendo establecer solo
-//         los atributos necesarios y omitiendo los opcionales.
-//
-//      3. PROTOTIPO: El patrón Prototype es un patrón de diseño creacional que se utiliza para crear
-//         nuevos objetos a partir de un prototipo existente, clonándolo en lugar de crearlo desde cero.
-//         En Java, se puede implementar el patrón Prototype utilizando la interfaz Cloneable y el método
-//         clone() para realizar la clonación de objetos.
-//         CASO DE USO: Creación de objetos costosos: Si la creación de un objeto es costosa en términos
-//         de recursos computacionales o tiempo, y se necesita crear múltiples instancias similares del
-//         mismo objeto, el patrón Prototipo puede ser útil. En lugar de crear cada objeto desde cero,
-//         se puede utilizar un objeto prototipo y clonarlo para crear nuevas instancias.
-//
-//      4. FACTORY: El patrón Factory (o patrón de fábrica) es un patrón de diseño creacional que se
-//         utiliza para crear objetos sin exponer la lógica de creación al cliente. En Java, se puede
-//         implementar el patrón Factory utilizando una clase fábrica que se encargue de instanciar y
-//         devolver objetos de diferentes tipos.
-//         CASO DE USO: Abstracción de la creación de objetos: Si se desea ocultar la complejidad de
-//         la creación de objetos o la lógica de selección de la subclase al cliente, el patrón Factory
-//         puede proporcionar una interfaz común y sencilla para crear objetos. El cliente solo necesita
-//         interactuar con la fábrica y no tiene que preocuparse por los detalles de creación.
-//
-//
 //  Patrones estructurales:
 //
 //      1. DECORATOR: es un patrón de diseño estructural que permite agregar funcionalidad adicional a

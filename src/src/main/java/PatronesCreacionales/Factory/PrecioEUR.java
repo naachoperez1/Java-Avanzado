@@ -5,4 +5,5 @@ public class PrecioEUR implements Precio{
     public double getPrecio() {
         return 1.24;
     }
+//  Clase que implementa la interfaz precio.
 }
